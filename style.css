@@ -7,6 +7,17 @@
   box-sizing: border-box;
 }
 
+input {
+  font: inherit;
+  border: none;
+}
+
+button {
+  border: none;
+  background-color: initial;
+  outline: none;
+}
+
 /* BASE STYLES */
 .page {
   font-family: 'Poppins', sans-serif;
@@ -41,6 +52,50 @@
 .header {
   grid-column: 1 / 3;
   grid-row: 1 / 2;
+
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 26px;
+  margin-right: 48px;
+}
+
+.search {
+
+}
+
+.search__input {
+
+}
+
+.search__submit {
+
+}
+
+.search__icon {
+
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  
+}
+
+.nav__link {
+
+}
+
+.nav__icon {
+
 }
 
 .sidebar {
@@ -59,7 +114,7 @@
 
 .steps {
   background-color: #e7edee;
-  
+
   grid-column: 2 / 3;
   grid-row: 3 / 4;
 }
