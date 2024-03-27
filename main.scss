@@ -1,5 +1,9 @@
 // VARIABLES
+$color-grey-light: #eef3f4;
+$color-grey-medium: #a9b4b7;
+$color-grey-dark: #555A5b;
 
+$ts: all 0.2s;
 
 /* RESET */
 *,
@@ -77,36 +81,36 @@ a {
   position: relative;
 
   &__input {
-    background-color: #eef3f4;
+    background-color: $color-grey-light;
     height: 34px;
     width: 405px;
     border-radius: 500px;
     font-size: 13px;
-    color: #555A5b;
+    color: $color-grey-dark;
     padding-left: 20px;
     outline: none;
-    transition: all 0.2s;
+    transition: $ts;
 
     &:focus {
       width: 425px;
     }
     
     &::placeholder {
-      color: #a9b4b7;
+      color: $color-grey-medium;
     }
   }
   
   &__submit {
     font-size: 15px;
-    color: #a9b4b7;
+    color: $color-grey-medium;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: $ts;
     position: absolute;
     right: 13px;
     top: 8px;
 
     &:focus {
-      color: #555A5b;
+      color: $color-grey-dark;
     }
   }
   
@@ -126,7 +130,7 @@ a {
   
   &__link {
     padding: 0 20px;
-    transition: all 0.2s;
+    transition: $ts;
     display: block;
     height: 65px;
   
@@ -135,12 +139,12 @@ a {
 
     &:hover,
     &:focus {
-      background-color: #eef3f4;
+      background-color: $color-grey-light;
     }
   }
   
   &__icon {
-    color: #a9b4b7;
+    color: $color-grey-medium;
     font-size: 22px;
   }
 }
@@ -153,7 +157,7 @@ a {
 }
 
 .gallery {
-	background-color: #eef3f4;
+	background-color: $color-grey-light;
 
 	grid-column: 2 / 3;
 	grid-row: 2 / 3;
