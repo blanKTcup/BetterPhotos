@@ -71,12 +71,41 @@ a {
 }
 
 .search {
+  position: relative;
 }
 
 .search__input {
+  background-color: #eef3f4;
+  height: 34px;
+  width: 405px;
+  border-radius: 500px;
+  font-size: 13px;
+  color: #555A5b;
+  padding-left: 20px;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.search__input:focus {
+  width: 425px;
+}
+
+.search__input::placeholder {
+  color: #a9b4b7;
 }
 
 .search__submit {
+  font-size: 15px;
+  color: #a9b4b7;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: absolute;
+  right: 13px;
+  top: 8px;
+}
+
+.search__submit:focus {
+  color: #555A5b;
 }
 
 .search__icon {
