@@ -26,6 +26,26 @@ a {
   text-decoration: none;
 }
 
+.u-italic {
+  font-style: italic;
+}
+
+.u-accent {
+  color: #2cc695;
+}
+
+.u-underline {
+  text-decoration: underline;
+}
+
+.u-bold {
+  font-weight: 500;
+}
+
+.u-bolder {
+  font-weight: 700;
+}
+
 .page {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
