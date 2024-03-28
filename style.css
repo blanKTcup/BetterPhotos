@@ -72,7 +72,7 @@ a {
   width: 405px;
   border-radius: 500px;
   font-size: 13px;
-  color: #555A5b;
+  color: #555a5b;
   padding-left: 20px;
   outline: none;
   transition: all 0.2s;
@@ -93,7 +93,7 @@ a {
   top: 8px;
 }
 .search__submit:focus {
-  color: #555A5b;
+  color: #555a5b;
 }
 .nav {
   margin-left: auto;
