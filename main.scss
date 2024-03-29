@@ -38,23 +38,23 @@ a {
 
 // UTILITY CLASSES
 .u-italic {
-  font-style: italic;
+	font-style: italic;
 }
 
 .u-accent {
-  color: $color-accent;
+	color: $color-accent;
 }
 
 .u-underline {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 .u-bold {
-  font-weight: 500;
+	font-weight: 500;
 }
 
 .u-bolder {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 // BASE STYLES
@@ -64,8 +64,7 @@ a {
 	color: white;
 	display: flex;
 	justify-content: center;
-	background-image: 
-    url(https://bytegrad.com/course-assets/css/2/pattern.svg),
+	background-image: url(https://bytegrad.com/course-assets/css/2/pattern.svg),
 		linear-gradient(to bottom right, #8fd861, #2cc695 90%);
 	scrollbar-width: none !important;
 	-ms-overflow-style: none !important;
@@ -183,123 +182,136 @@ a {
 }
 
 .intro {
-  padding: 48px 35px 45px;
-  border-bottom: 1px solid rgba(white, 0.1);
+	padding: 48px 35px 45px;
+	border-bottom: 1px solid rgba(white, 0.1);
 
-  &__text {
-    color: $color-grey-light;
-    font-size: 16px;
-    margin-top: 12px;
-    line-height: 1.8;
-  }
+	&__text {
+		color: $color-grey-light;
+		font-size: 16px;
+		margin-top: 12px;
+		line-height: 1.8;
+	}
 }
 
 .first-heading {
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 34px;
-  line-height: 1;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 34px;
+	line-height: 1;
 }
 
 .social {
-  display: flex;
-  justify-content: center;
-  margin: 25px 0 30px;
+	display: flex;
+	justify-content: center;
+	margin: 25px 0 30px;
 
-  &__img {
-    height: 35px;
-    width: 35px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid white;
+	&__img {
+		height: 35px;
+		width: 35px;
+		object-fit: cover;
+		border-radius: 50%;
+		border: 2px solid white;
 
-    &:not(:first-child) {
-      margin-left: -8px;
-    }
-  }
+		&:not(:first-child) {
+			margin-left: -8px;
+		}
+	}
 
-  &__container {
-    margin-left: 10px;
-  }
+	&__container {
+		margin-left: 10px;
+	}
 
-  &__number {
-    font-weight: 500;
-  }
+	&__number {
+		font-weight: 500;
+	}
 
-  &__text {
-    font-size: 12px;
-    color: $color-grey-medium;
-    line-height: 0.5;
-  }
+	&__text {
+		font-size: 12px;
+		color: $color-grey-medium;
+		line-height: 0.5;
+	}
 }
 
 .auth {
+	&__text {
+		color: $color-grey-medium;
+		font-size: 12px;
+		text-align: center;
+		margin-top: 8px;
+	}
 
-  &__text {
-    color: $color-grey-medium;
-    font-size: 12px;
-    text-align: center;
-    margin-top: 8px;
-  }
-
-  &__link {
-    font-weight: 500;
-    color: $color-accent;
-  }
+	&__link {
+		font-weight: 500;
+		color: $color-accent;
+	}
 }
 
 .btn {
-  background-color: #16b47f;
-  padding: 12px 0;
-  display: block;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 500;
-  border-radius: 5px;
-  transition: $ts;
-  
-  &:hover,
-  &:focus {
-    background-color: #119267;
-  }
+	background-color: #16b47f;
+	padding: 12px 0;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	border-radius: 5px;
+	transition: $ts;
 
-  &__icon {
-    margin-left: 2px;
-  }
+	&:hover,
+	&:focus {
+		background-color: #119267;
+	}
+
+	&__icon {
+		margin-left: 2px;
+	}
 }
 
 .upload {
-  padding: 45px 35px;
-  border-bottom: 1px solid rgba(white, 0.1);
-  color: $color-grey-medium;
+	padding: 45px 35px;
+	border-bottom: 1px solid rgba(white, 0.1);
+	color: $color-grey-medium;
 
-  &__container {
-    background-color: rgba(white, 0.03);
-    height: 330px;
-    border-radius: 3px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: $ts;
+	&__container {
+		background-color: rgba(white, 0.03);
+		height: 330px;
+		border-radius: 3px;
+		cursor: pointer;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		transition: $ts;
+    position: relative;
+    overflow: hidden;
 
-    &:hover {
-      background-color: rgba(white, 0.06);
-    }
-  }
+		&:hover {
+			background-color: rgba(white, 0.06);
+		}
 
-  &__icon {
+		&::before {
+			content: '';
+			border: 2px dashed #434747;
+      position: absolute;
+      top: -1px;
+      bottom: -1px;
+      left: -1px;
+      right: -1px;
+		}
+	}
 
-  }
+	&__icon {
+		font-size: 23px;
+	}
 
-  &__text {
+	&__text {
+		color: white;
+		margin-top: 8px;
+	}
 
-  }
-
-  &__alternative {
-
-  }
+	&__alternative {
+		font-size: 12px;
+		margin-top: -2px;
+	}
 }
 
 // -----------------------------------------
