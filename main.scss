@@ -36,7 +36,7 @@ a {
 	text-decoration: none;
 }
 
-// UTILITY CLASS
+// UTILITY CLASSES
 .u-italic {
   font-style: italic;
 }
@@ -64,7 +64,8 @@ a {
 	color: white;
 	display: flex;
 	justify-content: center;
-	background-image: url(https://bytegrad.com/course-assets/css/2/pattern.svg),
+	background-image: 
+    url(https://bytegrad.com/course-assets/css/2/pattern.svg),
 		linear-gradient(to bottom right, #8fd861, #2cc695 90%);
 	scrollbar-width: none !important;
 	-ms-overflow-style: none !important;
