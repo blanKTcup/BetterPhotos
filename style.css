@@ -216,6 +216,25 @@ a {
   margin-left: 2px;
 }
 
+.upload {
+  padding: 45px 35px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #a9b4b7;
+}
+.upload__container {
+  background-color: rgba(255, 255, 255, 0.03);
+  height: 330px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+.upload__container:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+}
 .gallery {
   background-color: #eef3f4;
   grid-column: 2/3;
