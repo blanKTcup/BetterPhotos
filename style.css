@@ -277,8 +277,10 @@ a {
   background-color: #eef3f4;
   grid-column: 2/3;
   grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 272px 60px 90px 64px 30px 208px;
 }
-
 .steps {
   background-color: #e7edee;
   grid-column: 2/3;

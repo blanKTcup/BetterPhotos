@@ -17,6 +17,7 @@ $ts: all 0.2s;
 }
 
 input {
+	// form styling
 	font: inherit;
 	border: none;
 }
@@ -281,8 +282,8 @@ a {
 		align-items: center;
 		justify-content: center;
 		transition: $ts;
-    position: relative;
-    overflow: hidden;
+		position: relative;
+		overflow: hidden;
 
 		&:hover {
 			background-color: rgba(white, 0.06);
@@ -291,11 +292,11 @@ a {
 		&::before {
 			content: '';
 			border: 2px dashed #434747;
-      position: absolute;
-      top: -1px;
-      bottom: -1px;
-      left: -1px;
-      right: -1px;
+			position: absolute;
+			top: -1px;
+			bottom: -1px;
+			left: -1px;
+			right: -1px;
 		}
 	}
 
@@ -315,28 +316,26 @@ a {
 }
 
 .footer {
-  padding-top: 50px;
-  padding-left: 35px;
-  font-size: 11px;
-  color: rgba($color-grey-medium, 0.6);
+	padding-top: 50px;
+	padding-left: 35px;
+	font-size: 11px;
+	color: rgba($color-grey-medium, 0.6);
 
-  &__list {
-    display: flex;
-    column-gap: 15px;
-    margin-top: 10px;
-  }
+	&__list {
+		display: flex;
+		column-gap: 15px;
+		margin-top: 10px;
+	}
 
-  &__item {
+	&__item {
+	}
 
-  }
-
-  &__link {
-
-  }
+	&__link {
+	}
 }
 
 .copyright {
-  font-size: inherit;
+	font-size: inherit;
 }
 
 // -----------------------------------------
@@ -346,6 +345,39 @@ a {
 
 	grid-column: 2 / 3;
 	grid-row: 2 / 3;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 272px 60px 90px 64px 30px 208px;
+
+	&__img-wrapper {
+	}
+
+	&__img {
+	}
+
+	&__comment {
+
+		&--1 {
+		}
+
+		&--2 {
+		}
+
+		&--3 {
+		}
+
+		&--4 {
+		}
+	}
+
+  &__icon {
+
+  }
+
+  &__number {
+
+  }
 }
 
 // -----------------------------------------
