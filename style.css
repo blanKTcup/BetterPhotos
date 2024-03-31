@@ -318,6 +318,27 @@ a {
   width: 100%;
   object-fit: cover;
 }
+.gallery__comment {
+  background-color: white;
+  font-size: 12px;
+  color: #555a5b;
+  padding: 4px 10px;
+  border-radius: 500px;
+}
+.gallery__comment--1 {
+  display: flex;
+  position: absolute;
+}
+.gallery__icon {
+  color: #2cc695;
+  font-size: 11px;
+}
+.gallery__number {
+  font-size: 11px;
+  font-weight: 600;
+  margin-right: 2px;
+}
+
 .steps {
   background-color: #e7edee;
   grid-column: 2/3;
